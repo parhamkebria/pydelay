@@ -1,6 +1,6 @@
 # pydelay
 
-**pydelay** is a Python package for simulating and analysing network time delays. It supports two statistical delay models — a Gaussian long-distance model and an exponential short-distance model — and produces publication-ready plots of the delay distribution and signal pulse train.
+**pydelay** is a Python package for simulating and analysing network time delays. It supports two statistical delay models, a Gaussian long-distance model and an exponential short-distance model, and produces publication-ready plots of the delay distribution and signal pulse train.
 
 ## Installation
 
@@ -90,4 +90,4 @@ Returns `(fig, (ax_signal, ax_dist, ax_dist2))`.
 
 ## License
 
-MIT © Parham Kebria
+MIT © [Parham Kebria](https://github.com/parhamkebria)
