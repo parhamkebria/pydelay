@@ -91,7 +91,7 @@ def delay(
 ) -> SimulationResult:
     """Run the delay simulation and return the generated data."""
 
-    announce_developer()
+    # announce_developer()
 
     normalized_model = _normalize_model(model)
     rng = np.random.default_rng(seed)
