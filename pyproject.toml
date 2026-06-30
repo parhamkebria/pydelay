@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydelay"
+version = "0.1.0"
+description = "Network time-delay simulation with statistical analysis and plotting"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Parham Kebria" }]
+requires-python = ">=3.10"
+keywords = ["network", "delay", "simulation", "statistics", "signal"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Telecommunications Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: System :: Networking",
+]
+dependencies = [
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "scipy>=1.10",
+]
+
+[project.urls]
+Homepage = "https://github.com/parhamkebria/pydelay"
+"Bug Tracker" = "https://github.com/parhamkebria/pydelay/issues"
+
+[project.scripts]
+pydelay = "pydelay.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pydelay*"]
